@@ -5,6 +5,9 @@ fi
 r=$(curl -s "https://www.xwordinfo.com/Rebus" | grep data-date=\"$date\" | wc | awk '{print $1}')
 if [ $r -eq 0 ] ; then
   echo "No"
+  echo "<h1>No<h1>" > index.html
 else
   echo "Yes"
+  echo "<h1>Yes<h1>" > index.html
 fi
+git commit -m $date_update

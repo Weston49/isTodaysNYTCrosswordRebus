@@ -10,4 +10,5 @@ else
   echo "Yes"
   echo "<h1>Yes<h1>" > index.html
 fi
-git commit -m $date_update
+git commit -a -m $date
+git push

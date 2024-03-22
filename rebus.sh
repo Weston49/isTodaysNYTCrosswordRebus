@@ -12,3 +12,4 @@ else
 fi
 git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus commit -a -m $date
 git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus push
+

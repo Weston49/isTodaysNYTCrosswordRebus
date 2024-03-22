@@ -10,5 +10,5 @@ else
   echo "Yes"
   echo "<h1 style=\"text-align:center\">Yes<h1>" > index.html
 fi
-git commit -a -m $date
-git push
+git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus commit -a -m $date
+git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus push

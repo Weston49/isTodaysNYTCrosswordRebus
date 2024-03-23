@@ -4,11 +4,10 @@ if [ $# -eq 1 ] ; then
 fi
 r=$(curl -s "https://www.xwordinfo.com/Rebus" | grep data-date=\"$date\" | wc | awk '{print $1}')
 if [ $r -eq 0 ] ; then
-  echo "No" > ans.txt
+  echo "No"
 else
-  echo "Yes" > ans.txt
+  echo "Yes"
 fi
-echo $date > date.txt
 git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus commit -a -m $date
 git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus push
 

@@ -11,7 +11,7 @@ else
   cat index.html | tail -n 3 >> tmp.txt
   cat tmp.txt > index.html
 fi
-echo $date > date.txt
+
 git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus commit -a -m $date
 git -C /home/wagreda/Documents/isTodaysNYTCrosswordRebus push
 
